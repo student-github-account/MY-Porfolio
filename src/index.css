@@ -1,0 +1,144 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+
+body {
+    padding-top: 4rem; /* Prevents overlap with navbar */
+}
+.animate-scroll {
+    display: flex;
+    gap: 1.5rem;
+    animation: scroll 15s linear infinite;
+}
+
+@keyframes scroll {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+
+
+/* about section styles css */
+body {
+    background-color: #1a1a1a; /* gray-900 */
+    color: #ffffff;
+    font-family: 'Arial', sans-serif;
+}
+
+.social-icon {
+    transition: all 0.3s ease;
+}
+
+.social-icon:hover {
+    background-color: #1f2937; /* gray-800 */
+    border-color: #1f2937;
+}
+
+.left-side {
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.right-side {
+    overflow-y: auto;
+    padding: 16px;
+    display: flex;
+}
+
+
+@media (max-width: 768px) {
+    .right-side {
+        padding: 12px;
+    }
+
+
+    .left-side img {
+        max-width: 100%;  /* Ensures image resizes correctly */
+        height: auto;
+    }
+}
+
+    /* about section styles end */
+
+
+
+
+/* contact form styles */
+
+body {
+    background-color: #1a1a1a; /* gray-900 */
+    color: #ffffff; /* white text for readability */
+    font-family: 'Inter', sans-serif; /* Modern font */
+    line-height: 1.6;
+}
+
+/* Adjustments for the profile section */
+.left-section {
+    height: 500px;
+    max-height: 100%;
+    overflow-y: auto;
+    scrollbar-width: thin;
+}
+
+.left-section::-webkit-scrollbar {
+    width: 10px;
+}
+
+.left-section::-webkit-scrollbar-thumb {
+    background: #4b5563; /* gray-700 */
+    border-radius: 6px;
+}
+
+.left-section::-webkit-scrollbar-track {
+    background: #1f2937; /* gray-800 */
+}
+
+.corner-decor {
+    position: absolute;
+    background: #4b5563; /* gray-700 */
+}
+
+.top-left-decor {
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    border-top-left-radius: 4px;
+}
+
+.bottom-right-decor {
+    bottom: 0;
+    right: 0;
+    width: 20px;
+    height: 20px;
+    border-bottom-right-radius: 4px;
+}
+
+/* Hover and focus effects */
+input:focus, textarea:focus {
+    outline: none;
+    border-color: #4b5563; /* gray-700 */
+    box-shadow: 0 0 10px rgba(107, 70, 193, 0.5);
+}
+
+button:hover {
+    background-color: #2d3748; /* gray-800 */
+}
+
+.social-icon:hover {
+    background-color: #2d3748; /* gray-800 */
+    color: #fff;
+}
+
+/* Contact form styles end*/
