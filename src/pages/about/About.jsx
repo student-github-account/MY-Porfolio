@@ -1,4 +1,4 @@
-import React from 'react';
+
 import { NavLink } from "react-router-dom";
 import { FaFacebook } from "react-icons/fa";
 import { FaTwitter } from "react-icons/fa";
@@ -6,19 +6,28 @@ import { FaInstagram } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
 import { FaYoutube } from "react-icons/fa";
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 
 const About = () => {
+    useEffect(() => {
+                  AOS.init({
+                    duration: 1000,
+                    once: true,
+                  });
+                }, []);
     return (
         <div className="bg-gray-900 text-white">
             <div className="w-full lg:w-11/12 mx-auto grid grid-cols-1 lg:grid-cols-2 min-h-screen gap-4 mt-4">
         {/* <!-- Left Side (Image) --> */}
-        <div className="left-side bg-gray-800 flex items-center justify-center">
+        <div className="left-side bg-gray-800 flex items-center justify-center" data-aos="zoom-in">
             <img src="https://res.cloudinary.com/dxgisw3qc/image/upload/v1737525683/Fahim1_smoothed_oekui9.jpg" alt="MD Fahim" className="rounded-lg max-h-screen max-w-full object-cover shadow-lg"/>
         </div>
 
         {/* <!-- Right Side (Text Content) --> */}
-        <div className="right-side bg-black flex flex-col justify-start">
+        <div className="right-side bg-black flex flex-col justify-start" data-aos="zoom-in">
             {/* <!-- Introduction Section --> */}
             <div>
                 <h1 className="text-3xl lg:text-4xl font-bold mt-6 text-white">MD Fahim</h1>

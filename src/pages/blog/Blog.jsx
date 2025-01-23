@@ -1,16 +1,25 @@
-import React from 'react';
+
 import { NavLink } from "react-router-dom";
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 
 const Blog = () => {
+    useEffect(() => {
+              AOS.init({
+                duration: 1000,
+                once: true,
+              });
+            }, []);
     return (
         <div className="bg-gray-900 text-white">
             <section className="container mx-auto py-12 px-6" id="blogs">
-        <h2 className="text-4xl font-bold text-center mb-12 text-white">Latest Blogs</h2>
+        <h2 className="text-4xl font-bold text-center mb-12 text-white" data-aos="zoom-in">Latest Blogs</h2>
         <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
 
             {/* <!-- Blog Card 1 --> */}
-            <div className="max-w-sm bg-gray-800 border border-gray-700 rounded-lg shadow">
+            <div className="max-w-sm bg-gray-800 border border-gray-700 rounded-lg shadow" data-aos="zoom-in">
                 <NavLink to="#" className="block aspect-video overflow-hidden rounded-t-lg">
                     <img className="w-full h-full object-cover" src="https://res.cloudinary.com/dxgisw3qc/image/upload/v1737526010/U_m4vbws.jpg" alt="Blog Image" />
                 </NavLink>
@@ -26,7 +35,7 @@ const Blog = () => {
             </div>
 
             {/* <!-- Blog Card 2 --> */}
-            <div className="max-w-sm bg-gray-800 border border-gray-700 rounded-lg shadow">
+            <div className="max-w-sm bg-gray-800 border border-gray-700 rounded-lg shadow" data-aos="zoom-in">
                 <NavLink to="#" className="block aspect-video overflow-hidden rounded-t-lg">
                     <img className="w-full h-full object-cover" src="https://res.cloudinary.com/dxgisw3qc/image/upload/v1737526006/15_d9hywn.jpg" alt="Blog Image" />
                 </NavLink>
@@ -42,7 +51,7 @@ const Blog = () => {
             </div>
 
             {/* <!-- Blog Card 3 --> */}
-            <div className="max-w-sm bg-gray-800 border border-gray-700 rounded-lg shadow">
+            <div className="max-w-sm bg-gray-800 border border-gray-700 rounded-lg shadow" data-aos="zoom-in">
                 <NavLink to="#" className="block aspect-video overflow-hidden rounded-t-lg">
                     <img className="w-full h-full object-cover" src="https://res.cloudinary.com/dxgisw3qc/image/upload/v1737526006/170_qmkxu5.png" alt="Blog Image" />
                 </NavLink>
