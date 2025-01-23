@@ -38,7 +38,7 @@ const Banner = () => {
             tailored for your business.
           </p>
           <a
-            href="https://docs.google.com/document/d/1VRdhCMiIwmqu1PX5IF9l4lGHa_hM_CZ1/edit?usp=sharing&ouid=102578738151190019885&rtpof=true&sd=true"
+            href="https://drive.google.com/file/d/1Duws8o-isPr4eBQHZlVOrgESntmOXG0s/view?usp=sharing"
             aria-label="Download My CV"
           >
             <button className="px-6 py-3 text-sm font-semibold bg-white text-black rounded hover:bg-gray-200 transition duration-200">
