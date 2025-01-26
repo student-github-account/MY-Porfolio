@@ -14,7 +14,7 @@ const Work = () => {
         <div className="bg-gray-900 text-white">
         <section className="container mx-auto py-12 px-4">
           <div className="text-center mb-10" data-aos="zoom-in">
-            <h1 className="text-7xl font-semibold text-white mb-4 leading-tight italic">Work</h1>
+            <h1 className="text-7xl font-semibold text-white mb-4 leading-tight italic z-0">Work</h1>
             <p className="text-xl text-gray-400 leading-relaxed">
               My latest web design projects and see <br /> how we can help bring your ideas to life.
             </p>

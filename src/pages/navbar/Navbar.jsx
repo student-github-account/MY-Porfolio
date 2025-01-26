@@ -8,7 +8,7 @@ const Navbar = () => {
   return (
     <div>
       {/* Navigation Bar */}
-      <nav className="fixed top-0 left-0 w-full bg-transparent opacity-80 shadow-lg z-50">
+      <nav className="fixed top-0 left-0 w-full bg-transparent opacity-90 shadow-lg z-50">
         <div className="flex items-center justify-between h-16 px-4 sm:px-6">
           {/* Logo */}
           <div className="flex items-center space-x-3">
@@ -91,7 +91,7 @@ const Navbar = () => {
             <li>
               <NavLink
                 className="text-sm font-medium text-gray-300 hover:text-white"
-                to="https://drive.google.com/file/d/1Duws8o-isPr4eBQHZlVOrgESntmOXG0s/view?usp=sharing"
+                to="https://drive.google.com/file/d/1eds4LjsWe_bPAzYLsoyg0RB8A3-ztlmh/view?usp=sharing"
                 target="_blank"
               >
                 CV
