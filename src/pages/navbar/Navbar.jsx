@@ -91,7 +91,7 @@ const Navbar = () => {
             <li>
               <NavLink
                 className="text-sm font-medium text-gray-300 hover:text-white"
-                to="https://drive.google.com/file/d/1eds4LjsWe_bPAzYLsoyg0RB8A3-ztlmh/view?usp=sharing"
+                to="https://drive.google.com/file/d/1ZbO87gQUcCFORFK_oEgbAi2k7yP9whtc/view?usp=sharing"
                 target="_blank"
               >
                 CV
