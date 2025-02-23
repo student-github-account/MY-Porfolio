@@ -24,17 +24,19 @@ const Work = () => {
           <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
             {/* Work Item 1 */}
             <div className="p-4 border border-gray-700 bg-black rounded-lg shadow-lg transform hover:scale-105 transition duration-300 ease-in-out"data-aos="flip-left">
+              <a href="">
               <img
                 src="https://res.cloudinary.com/dxgisw3qc/image/upload/v1737525858/r_pxxnj8.jpg"
                 alt="Rahman & Sons Group"
                 className="w-full h-64 object-cover rounded-md mb-4"
                 loading="lazy"
               />
+              </a>
               <div className="flex items-center justify-between">
                 <h3 className="text-xl font-semibold">Rahman & Sons Group</h3>
                 <div className="flex items-center space-x-2">
                   <i className="fa-solid fa-calendar-alt"></i>
-                  <span>2024</span>
+                 <a href="https://rahmansonsgroup.com/"> <span>Live Link</span></a>
                 </div>
               </div>
             </div>
@@ -52,6 +54,24 @@ const Work = () => {
                 <div className="flex items-center space-x-2">
                   <i className="fa-solid fa-calendar-alt"></i>
                   <span>2025</span>
+                </div>
+              </div>
+            </div>
+{/* work item 3 */}
+            <div className="p-4 border border-gray-700 bg-black rounded-lg shadow-lg transform hover:scale-105 transition duration-300 ease-in-out"data-aos="flip-left">
+              <a href="">
+              <img
+                src="https://content.jdmagicbox.com/v2/comp/varanasi/p5/0542px542.x542.230324092021.e6p5/catalogue/ranjana-girls-hostel-dlw-varanasi-hostels-0ccklty4ct.jpg"
+                alt="Rahman & Sons Group"
+                className="w-full h-64 object-cover rounded-md mb-4"
+                loading="lazy"
+              />
+              </a>
+              <div className="flex items-center justify-between">
+                <h3 className="text-xl font-semibold">Ronjona Girls Hostel</h3>
+                <div className="flex items-center space-x-2">
+                  <i className="fa-solid fa-calendar-alt"></i>
+                 <a href="https://ronjona-hostel.vercel.app/"> <span>Live Link</span></a>
                 </div>
               </div>
             </div>
